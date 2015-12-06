@@ -29,7 +29,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewLayout key="collectionViewLayout" id="wRG-6F-ObO" customClass="BJFixedGridLayout"/>
+                        <collectionViewLayout key="collectionViewLayout" id="wRG-6F-ObO" customClass="BJCircleLayout"/>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" reuseIdentifier="Cell" id="7Pw-q1-5ah" customClass="BJCell">
                                 <rect key="frame" x="0.0" y="0.0" width="231" height="238"/>
