@@ -23,6 +23,13 @@
 
 @implementation BJViewController
 
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [self becomeFirstResponder];
+}
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -33,6 +40,21 @@
     }
     return self;
 }
+
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        PMKPromise *loadItemsPromise =     [self loadItems:self.item];
+        loadItemsPromise.finally(^(void){
+            self.items = loadItemsPromise.value;
+            [[self collectionView] reloadData];
+        });
+    }
+}
+
+
+
 - (PMKPromise *)loadItems:(BJItem *)item {
     NSLog(@"Load Items");
     
@@ -195,6 +217,7 @@
                     detailViewController.image = cell.imageView.image;
                     detailViewController.labelText = cell.label.text;
                     
+                    self.item = nil;
                     [self.navigationController pushViewController:detailViewController animated:YES];
                 }
             }

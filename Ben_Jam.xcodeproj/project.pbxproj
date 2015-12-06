@@ -34,6 +34,7 @@
 		20BD7DA81A39161400790055 /* BJCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BD7DA71A39161400790055 /* BJCell.m */; };
 		20FABD351AA5B7EE0002E4BB /* BJModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20FABD331AA5B7EE0002E4BB /* BJModel.xcdatamodeld */; };
 		20FABD371AA5CA3E0002E4BB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FABD361AA5CA3E0002E4BB /* AVFoundation.framework */; };
+		372CF6FA1C0AAFB600FC194E /* BJCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 372CF6F91C0AAFB600FC194E /* BJCircleLayout.m */; };
 		631B7DDA1B4282D800BD8BD8 /* BJServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 631B7DD91B4282D800BD8BD8 /* BJServer.m */; };
 		631B7DDB1B4282D800BD8BD8 /* BJServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 631B7DD91B4282D800BD8BD8 /* BJServer.m */; };
 		C5807A295954134EFFB9CAF4 /* libPods-Ben_Jam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E318FDCEE24FE80A790DB6 /* libPods-Ben_Jam.a */; };
@@ -84,6 +85,8 @@
 		20BD7DA71A39161400790055 /* BJCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCell.m; sourceTree = "<group>"; };
 		20FABD341AA5B7EE0002E4BB /* BJModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BJModel.xcdatamodel; sourceTree = "<group>"; };
 		20FABD361AA5CA3E0002E4BB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		372CF6F81C0AAFAA00FC194E /* BJCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJCircleLayout.h; sourceTree = "<group>"; };
+		372CF6F91C0AAFB600FC194E /* BJCircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCircleLayout.m; sourceTree = "<group>"; };
 		52E318FDCEE24FE80A790DB6 /* libPods-Ben_Jam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ben_Jam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		631B7DD81B4282D800BD8BD8 /* BJServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJServer.h; sourceTree = "<group>"; };
 		631B7DD91B4282D800BD8BD8 /* BJServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJServer.m; sourceTree = "<group>"; };
@@ -174,7 +177,9 @@
 				20BD7DA71A39161400790055 /* BJCell.m */,
 				20BD7D891A390DC900790055 /* Images.xcassets */,
 				2084DF791A65E34E000BCB9A /* BJFixedGridLayout.h */,
+				372CF6F81C0AAFAA00FC194E /* BJCircleLayout.h */,
 				2084DF7A1A65E34E000BCB9A /* BJFixedGridLayout.m */,
+				372CF6F91C0AAFB600FC194E /* BJCircleLayout.m */,
 				2046A6191A7F13B500C08622 /* BJItemClient.h */,
 				2046A61A1A7F13B500C08622 /* BJItemClient.m */,
 				20FABD331AA5B7EE0002E4BB /* BJModel.xcdatamodeld */,
@@ -426,6 +431,7 @@
 			files = (
 				631B7DDA1B4282D800BD8BD8 /* BJServer.m in Sources */,
 				2056F1C41A3A86E000E5142B /* BJItem.m in Sources */,
+				372CF6FA1C0AAFB600FC194E /* BJCircleLayout.m in Sources */,
 				2056F1C11A3A7F3200E5142B /* BJDetailViewController.m in Sources */,
 				20FABD351AA5B7EE0002E4BB /* BJModel.xcdatamodeld in Sources */,
 				20BD7D881A390DC900790055 /* BJViewController.m in Sources */,

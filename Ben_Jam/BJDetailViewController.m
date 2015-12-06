@@ -28,6 +28,14 @@
     return self;
 }
 
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [self becomeFirstResponder];
+}
+
 - (void)viewDidLoad
 {
     NSLog(@"viewDidLoad %@", self);
@@ -70,5 +78,13 @@
     NSLog(@"Incorrect");
     [self.navigationController popViewControllerAnimated: YES];
 }
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        [self.navigationController popToRootViewControllerAnimated: YES];
+    }
+}
+
 
 @end
